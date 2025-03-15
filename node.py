@@ -19,3 +19,9 @@ class Node:
         """
         weighted_sum = np.dot(inputs, self.weights) + self.bias
         return self.activate(weighted_sum)
+
+     def __str__(self):
+        """
+        Representación en string del nodo.
+        """
+        return f"Node(input_size={self.num_inputs}, weights={self.weights}, bias={self.bias}
